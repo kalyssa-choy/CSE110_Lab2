@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Minutes</title>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Minutes</h1>
+      <nav>
+        <ul>
+          <li><a href="#details">Details</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#follow-up">Follow Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <section id="details">
+        <h2>Meeting Details</h2>
+
+        <div>
+          <p>
+            <strong>Topic:</strong>
+            <span>Project Kick-off! <b>All hands</b> meeting</span>
+          </p>
+          <p>
+            <strong>Date:</strong> April 13<br />
+            <span><em>Note:</em> Attendance required.</span>
+          </p>
+          <details>
+            <summary>More meeting notes</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              in eius libero, perferendis provident voluptatibus fugiat totam
+              enim quia molestiae.
+            </p>
+          </details>
+        </div>
+
+        <section>
+          <h3>Attendees</h3>
+          <ul>
+            <li>John Doe</li>
+            <li>Jane Doe</li>
+            <li>Jack Doe</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="agenda">
+        <h2>Meeting Agenda</h2>
+        <ol>
+          <li>Project Overview</li>
+          <li>Roles and Responsibilities</li>
+          <li>Timeline and Milestones</li>
+          <li>Next Steps</li>
+        </ol>
+      </section>
+
+      <section id="follow-up">
+        <h2>Follow Up Items</h2>
+
+        <article>
+          <h3>Unfinished Business</h3>
+          <p>None</p>
+        </article>
+
+        <article>
+          <h3>New Business</h3>
+          <p>
+            Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Ex
+            architecto repellat fugiat cumque recusandae excepturi facere hic
+            veritatis, a <i>ab</i>.
+          </p>
+        </article>
+
+        <article>
+          <h3>Comments, Questions, and Concerns</h3>
+          <ul>
+            <li>When is everyone available to meet next?</li>
+            <li>What assignments are due this week?</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="media">
+        <h2>Media</h2>
+        <div>
+          <section>
+            <h3>Diagrams / Pictures</h3>
+            <img src="favicon-32x32.png" alt="happy face" />
+          </section>
+          <section>
+            <h3>Video / Audio</h3>
+            <video controls width="640">
+              <source src="CSE110_TestVideo_Lab2.mp4" type="video/mp4" />
+            </video>
+            <audio controls>
+              <source src="CSE110_TestAudio_Lab2.m4a" type="audio/mp4" />
+              Your browser does not support the audio element.
+            </audio>
+          </section>
+        </div>
+      </section>
+
+      <section id="check-in">
+        <h2>Meeting Check-In</h2>
+        <form>
+          <fieldset>
+            <legend>Attendee check-in</legend>
+
+            <p>
+              <label>
+                <input type="checkbox" name="attended" value="yes" checked />
+                I attended the meeting
+              </label>
+            </p>
+
+            <p>
+              Participation:
+              <label>
+                <input
+                  type="radio"
+                  name="participation"
+                  value="remote"
+                  checked
+                />
+                Remote
+              </label>
+              <label>
+                <input type="radio" name="participation" value="in-person" />
+                In person
+              </label>
+            </p>
+
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              />
+            </p>
+
+            <p>
+              <label for="checkin-date">Check-in date:</label>
+              <input type="date" id="checkin-date" name="checkin-date" />
+            </p>
+
+            <p>
+              <label for="status">Meeting status:</label>
+              <select id="status" name="status">
+                <option value="">Select status</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+                <option value="follow-up">Follow up</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="mood">Meeting mood:</label>
+              <input
+                list="moods"
+                id="mood"
+                name="mood"
+                placeholder="Choose or type"
+              />
+              <datalist id="moods">
+                <option value="Productive"></option>
+                <option value="Neutral"></option>
+                <option value="Needs improvement"></option>
+              </datalist>
+            </p>
+
+            <p>
+              <label for="action-items">Action items:</label>
+              <textarea
+                id="action-items"
+                name="action-items"
+                rows="3"
+                placeholder="Describe follow-up tasks"
+              ></textarea>
+            </p>
+
+            <button type="submit">Submit Check-In</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Meeting minutes prepared for the project team.</p>
+    </footer>
+  </body>
+</html>
